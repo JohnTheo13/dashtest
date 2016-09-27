@@ -1,5 +1,5 @@
 app.factory('getData', ['$http', function($http) { 
-  return   $http.get('https://api.myjson.com/bins/29ja6').
+  return   $http.get('https://api.myjson.com/bins/29ja6'). //retrives the data
     success(function(data) {
       var adata = angular.fromJson(data);
       var data=[];
